@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - Mode Moto</title>
+    <title>Privacy Policy / Politique de Confidentialité - Moto Mode</title>
     <style>
         * {
             margin: 0;
@@ -22,11 +22,33 @@
             margin: 0 auto;
             padding: 40px 20px;
         }
+        .lang-switcher {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background: #FF6B00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .lang-btn:hover {
+            background: #e55f00;
+        }
+        .lang-btn.active {
+            background: #cc5500;
+        }
         .card {
             background: #fff;
             border-radius: 16px;
             padding: 40px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
         }
         h1 {
             color: #FF6B00;
@@ -35,7 +57,7 @@
         }
         .app-name {
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             font-size: 1.1em;
         }
         .last-update {
@@ -61,6 +83,13 @@
         li {
             margin-bottom: 8px;
         }
+        a {
+            color: #FF6B00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         .highlight {
             background: #fff3e6;
             padding: 20px;
@@ -73,13 +102,6 @@
             border-radius: 10px;
             margin-top: 30px;
         }
-        .contact a {
-            color: #FF6B00;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
         .footer {
             text-align: center;
             margin-top: 30px;
@@ -88,11 +110,108 @@
             color: #999;
             font-size: 0.9em;
         }
+        .hidden {
+            display: none;
+        }
+        .divider {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #FF6B00, transparent);
+            margin: 40px 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="showLang('en')">English</button>
+            <button class="lang-btn" onclick="showLang('fr')">Français</button>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div id="en" class="card">
+            <h1>Privacy Policy</h1>
+            <p class="app-name">Moto Mode Application</p>
+            <p class="last-update">Last updated: December 22, 2024</p>
+
+            <div class="highlight">
+                <strong>Summary:</strong> Moto Mode respects your privacy. The application operates primarily locally on your device and does not collect personal data on our servers.
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>This privacy policy explains how the Moto Mode application ("the App") handles your information. Moto Mode is an Android application designed to facilitate phone use while motorcycling, with navigation, music control, and quick call features.</p>
+
+            <h2>2. Data We Collect</h2>
+            <p>The App accesses the following data, which remains stored locally on your device:</p>
+            <ul>
+                <li><strong>Contacts:</strong> For the quick calls feature, the App may access your contacts if you grant permission. This data is never transmitted to external servers.</li>
+                <li><strong>Notifications:</strong> To display current music information, the App may read notifications from audio players.</li>
+                <li><strong>Preferences:</strong> Your settings (favorite apps, favorite addresses) are stored locally on your device.</li>
+            </ul>
+
+            <h2>3. Legal Basis for Data Processing</h2>
+            <p>We process your data based on:</p>
+            <ul>
+                <li><strong>Your consent:</strong> You explicitly grant permissions through Android's permission system before we access contacts or notifications.</li>
+                <li><strong>Legitimate interest:</strong> To provide the core functionality of the App.</li>
+            </ul>
+
+            <h2>4. Advertising</h2>
+            <p>The App displays advertisements provided by Google AdMob. Google may collect certain information to personalize ads, in accordance with its own privacy policy. Premium users do not see advertisements.</p>
+            <p>AdMob may collect:</p>
+            <ul>
+                <li>Device identifiers (Advertising ID)</li>
+                <li>IP address</li>
+                <li>General location data</li>
+                <li>App usage data</li>
+            </ul>
+            <p>For more information about Google's data collection:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Privacy Guide</a></li>
+            </ul>
+
+            <h2>5. In-App Purchases</h2>
+            <p>The App offers a Premium subscription through Google Play. Transactions are handled entirely by Google Play, and we do not have access to your payment information.</p>
+
+            <h2>6. Data Sharing</h2>
+            <p>We do not sell, trade, or transfer your personal information to third parties, except for the third-party services mentioned (Google AdMob, Google Play Billing) which have their own privacy policies.</p>
+
+            <h2>7. Data Retention</h2>
+            <p>Your data is stored locally on your device for as long as the App is installed. When you uninstall the App, all locally stored data is automatically deleted. We do not retain any of your personal data on our servers.</p>
+
+            <h2>8. Security</h2>
+            <p>Your data remains on your device. We do not maintain servers that collect your personal information. The security of your data depends on your Android device's security.</p>
+
+            <h2>9. Your Rights</h2>
+            <p>You can at any time:</p>
+            <ul>
+                <li>Revoke permissions granted to the App via Android settings</li>
+                <li>Delete your data by uninstalling the App</li>
+                <li>Manage your advertising preferences via your device's Google settings</li>
+                <li>Request information about data processing by contacting us</li>
+                <li>Opt out of personalized advertising in your device settings</li>
+            </ul>
+
+            <h2>10. Children's Privacy</h2>
+            <p>The App is not intended for children under 13 years of age and does not knowingly collect information from them. If you believe we have inadvertently collected information from a child, please contact us immediately.</p>
+
+            <h2>11. Changes to This Policy</h2>
+            <p>This policy may be updated occasionally. Changes will be posted on this page with a revised update date. We encourage you to review this policy periodically.</p>
+
+            <div class="contact">
+                <h2 style="margin-top: 0; border: none; padding-left: 0;">12. Contact Us</h2>
+                <p>For any questions regarding this privacy policy or to exercise your rights, you can contact us at:</p>
+                <p><a href="mailto:xpdemonn@gmail.com">xpdemonn@gmail.com</a></p>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2024 Moto Mode. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- VERSION FRANCAISE -->
+        <div id="fr" class="card hidden">
             <h1>Politique de Confidentialité</h1>
             <p class="app-name">Application Mode Moto (Moto Mode)</p>
             <p class="last-update">Dernière mise à jour : 22 décembre 2024</p>
@@ -112,41 +231,60 @@
                 <li><strong>Préférences :</strong> Vos paramètres (applications favorites, adresses favorites) sont stockés localement sur votre appareil.</li>
             </ul>
 
-            <h2>3. Publicités</h2>
+            <h2>3. Base légale du traitement</h2>
+            <p>Nous traitons vos données sur la base de :</p>
+            <ul>
+                <li><strong>Votre consentement :</strong> Vous accordez explicitement les permissions via le système Android avant que nous accédions aux contacts ou notifications.</li>
+                <li><strong>Intérêt légitime :</strong> Pour fournir les fonctionnalités principales de l'Application.</li>
+            </ul>
+
+            <h2>4. Publicités</h2>
             <p>L'Application affiche des publicités fournies par Google AdMob. Google peut collecter certaines informations pour personnaliser les annonces, conformément à sa propre politique de confidentialité. Les utilisateurs Premium ne voient pas de publicités.</p>
+            <p>AdMob peut collecter :</p>
+            <ul>
+                <li>Identifiants d'appareil (ID publicitaire)</li>
+                <li>Adresse IP</li>
+                <li>Données de localisation générales</li>
+                <li>Données d'utilisation de l'application</li>
+            </ul>
             <p>Pour plus d'informations sur la collecte de données par Google :</p>
             <ul>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité Google</a></li>
                 <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">Guide AdMob sur la confidentialité</a></li>
             </ul>
 
-            <h2>4. Achats intégrés</h2>
+            <h2>5. Achats intégrés</h2>
             <p>L'Application propose un abonnement Premium via Google Play. Les transactions sont gérées entièrement par Google Play et nous n'avons pas accès à vos informations de paiement.</p>
 
-            <h2>5. Partage des données</h2>
+            <h2>6. Partage des données</h2>
             <p>Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles à des tiers, à l'exception des services tiers mentionnés (Google AdMob, Google Play Billing) qui ont leurs propres politiques de confidentialité.</p>
 
-            <h2>6. Sécurité</h2>
+            <h2>7. Conservation des données</h2>
+            <p>Vos données sont stockées localement sur votre appareil tant que l'Application est installée. Lorsque vous désinstallez l'Application, toutes les données stockées localement sont automatiquement supprimées. Nous ne conservons aucune de vos données personnelles sur nos serveurs.</p>
+
+            <h2>8. Sécurité</h2>
             <p>Vos données restent sur votre appareil. Nous ne maintenons pas de serveurs collectant vos informations personnelles. La sécurité de vos données dépend de la sécurité de votre appareil Android.</p>
 
-            <h2>7. Droits des utilisateurs</h2>
+            <h2>9. Vos droits</h2>
             <p>Vous pouvez à tout moment :</p>
             <ul>
                 <li>Révoquer les permissions accordées à l'Application via les paramètres Android</li>
                 <li>Supprimer vos données en désinstallant l'Application</li>
                 <li>Gérer vos préférences publicitaires via les paramètres Google de votre appareil</li>
+                <li>Demander des informations sur le traitement des données en nous contactant</li>
+                <li>Désactiver la publicité personnalisée dans les paramètres de votre appareil</li>
             </ul>
 
-            <h2>8. Enfants</h2>
-            <p>L'Application n'est pas destinée aux enfants de moins de 13 ans et ne collecte pas sciemment d'informations les concernant.</p>
+            <h2>10. Protection des mineurs</h2>
+            <p>L'Application n'est pas destinée aux enfants de moins de 13 ans et ne collecte pas sciemment d'informations les concernant. Si vous pensez que nous avons collecté par inadvertance des informations concernant un enfant, veuillez nous contacter immédiatement.</p>
 
-            <h2>9. Modifications</h2>
-            <p>Cette politique peut être mise à jour occasionnellement. Les modifications seront publiées sur cette page avec une date de mise à jour révisée.</p>
+            <h2>11. Modifications</h2>
+            <p>Cette politique peut être mise à jour occasionnellement. Les modifications seront publiées sur cette page avec une date de mise à jour révisée. Nous vous encourageons à consulter régulièrement cette politique.</p>
 
             <div class="contact">
-                <h2 style="margin-top: 0; border: none; padding-left: 0;">10. Contact</h2>
-                <p>Pour toute question concernant cette politique de confidentialité, vous pouvez nous contacter à :</p>
-                <p><a href="mailto:contact@motomode.app">contact@motomode.app</a></p>
+                <h2 style="margin-top: 0; border: none; padding-left: 0;">12. Contact</h2>
+                <p>Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter à :</p>
+                <p><a href="mailto:xpdemonn@gmail.com">xpdemonn@gmail.com</a></p>
             </div>
 
             <div class="footer">
@@ -154,5 +292,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('en').classList.add('hidden');
+            document.getElementById('fr').classList.add('hidden');
+            document.getElementById(lang).classList.remove('hidden');
+
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
